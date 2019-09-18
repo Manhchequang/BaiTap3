@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html{
+	background-color: rgb(239, 239, 239);
+
+}
+a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.8);
+}
+#wrapper ul {
+	list-style: none;
+}
+#wrapper{
+	width: 1300px;
+    margin: 100px auto;
+	border: 1px solid #ddd;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+}
+#wrapper:hover{
+	box-shadow: 5px 5px rgba(0,0,0,0.2);
+}
+#wrapper >ul >li{
+	width: 250px;
+	padding: 0 5px; 
+}
+#wrapper >ul >li >ul{
+	display: none;
+}
+#wrapper >ul >li:hover >ul{
+	display: block;
+}
+#wrapper >ul{
+	min-height: 500px;
+	position: relative;
+}
+
+#wrapper >ul >li >a{
+	display: block;
+	padding: 10px 10px;
+	border-right: 1px solid #ddd;
+}
+#wrapper >ul >li >ul{
+	position: absolute;
+	width: 1000px;
+	top: 0;
+	left: 250px;
+	padding-left: 20px;
+	min-height: 500px;
+}
+}
+#wrapper >ul >li{
+	border-right: 1px solid black;
+}
+#wrapper >ul >li:hover{
+	background-color: rgba(0, 127, 240,0.8);
+	border-radius: 0 20px 20px 0;
+	
+}
+#wrapper >ul >li:hover >a{
+    color: rgb(255,255,255);
+    border-right: none;
+}
+#wrapper >ul >li >ul >li{
+	width: 25%;
+	height: 100%;
+	margin-top :10px;
+	display: block;
+	float: left;
+}
+#wrapper >ul >li >ul >li >ul>li {
+	padding: 3px 0;	
+}
+#wrapper >ul >li >ul >li >ul>li:hover>a{
+	color: rgb(0, 127, 240);
+}
+.bold{
+	font-weight: bold;
+}
